@@ -4,7 +4,7 @@ Install and configure selinux and its required libraries on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-selinux/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-selinux/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-selinux)|[![Quality Score](https://img.shields.io/ansible/quality/57924)](https://galaxy.ansible.com/buluma/selinux)|[![Download](https://img.shields.io/ansible/role/d/57924)](https://galaxy.ansible.com/buluma/selinux)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/releases/)|
+|[![github](https://github.com/buluma/ansible-role-selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-selinux/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-selinux/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-selinux/-/commits/main)|[![Quality Score](https://img.shields.io/ansible/quality/57924)](https://galaxy.ansible.com/buluma/selinux)|[![Download](https://img.shields.io/ansible/role/d/57924)](https://galaxy.ansible.com/buluma/selinux)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
