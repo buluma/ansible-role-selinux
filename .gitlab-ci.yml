@@ -16,27 +16,29 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine"
+      - image: "alpine-openrc"
         tag: "latest"
       - image: "amazonlinux"
         tag: "latest"
       - image: "centos"
         tag: "7"
-      - image: "debian"
+      - image: "centos"
         tag: "latest"
-      - image: "debian"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
         tag: "bookworm"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "34"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "latest"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "latest"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "bionic"
 
 testing:
@@ -47,29 +49,31 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine"
+      - image: "alpine-openrc"
         tag: "latest"
       - image: "amazonlinux"
         tag: "latest"
       - image: "centos"
         tag: "7"
-      - image: "debian"
+      - image: "centos"
         tag: "latest"
-      - image: "debian"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
         tag: "bookworm"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "34"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "latest"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "latest"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "bionic"
 
 galaxy:
   script:
-    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.selinux
+    - ansible-galaxy role info buluma.selinux
