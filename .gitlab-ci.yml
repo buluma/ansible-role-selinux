@@ -46,7 +46,8 @@ testing:
     - if: $CI_COMMIT_REF_NAME == "testing"
   retry: 1
   parallel:
-    matrix:- image: "alpine-openrc"
+    matrix:
+      - image: "alpine-openrc"
         tag: "latest"
       - image: "amazonlinux"
         tag: "latest"
@@ -76,7 +77,8 @@ role_testing:
     - if: $CI_COMMIT_REF_NAME == "testing"
   retry: 1
   parallel:
-    matrix:- image: "alpine-openrc"
+    matrix:
+      - image: "alpine-openrc"
         tag: "latest"
       - image: "amazonlinux"
         tag: "latest"
@@ -108,7 +110,8 @@ role_testing_live:
     - image=${image} tag=${tag} ansible-galaxy install buluma.selinux
   retry: 1
   parallel:
-    matrix:- image: "alpine-openrc"
+    matrix:
+      - image: "alpine-openrc"
         tag: "latest"
       - image: "amazonlinux"
         tag: "latest"
