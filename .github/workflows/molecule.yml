@@ -73,4 +73,3 @@ jobs:
           tag: ${{ matrix.config.tag }}
       - name: slack - GitHub Actions Slack integration
         uses: act10ns/slack@v1.5.1
-
