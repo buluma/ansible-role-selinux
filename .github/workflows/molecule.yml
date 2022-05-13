@@ -9,9 +9,12 @@ on:
   # Schedule updates (once daily)
   schedule:
     - cron: '37 19 * * *'
-  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   lint:
@@ -37,8 +40,10 @@ jobs:
             tag: "latest"
           - image: "amazonlinux"
             tag: "latest"
-          - image: "centos-systemd"
+          - image: "enterpriselinux"
             tag: "7"
+          - image: "enterpriselinux"
+            tag: "latest"
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
@@ -46,18 +51,22 @@ jobs:
           - image: "fedora-systemd"
             tag: "34"
           - image: "fedora-systemd"
-            tag: "latest"
+            tag: "35"
           - image: "fedora-systemd"
-            tag: "rawhide"
-          - image: "opensuse"
+            tag: "latest"
+          - image: "docker-opensuse-systemd"
             tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "bionic"
+          - image: "docker-ubuntu-systemd"
+            tag: "focal"
+          - image: "docker-ubuntu-systemd"
+            tag: "jammy"
     steps:
       - name: checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
         with:
           path: "${{ github.repository }}"
       - name: disable apparmor for mysql
@@ -69,10 +78,3 @@ jobs:
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
-      - name: Slack Notification
-        uses: act10ns/slack@v1
-        with:
-          status: "${{ job.status }}"
-          steps: "${{ toJson(steps) }}"
-          channel: "#ansible"
-        if: always()
