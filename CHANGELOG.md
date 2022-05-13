@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/buluma/ansible-role-selinux/tree/1.0.7) (2022-04-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.6...1.0.7)
+
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#16](https://github.com/buluma/ansible-role-selinux/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.0.6](https://github.com/buluma/ansible-role-selinux/tree/1.0.6) (2022-03-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.5...1.0.6)
