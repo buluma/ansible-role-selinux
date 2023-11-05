@@ -2,9 +2,9 @@
 
 Install and configure selinux and its required libraries on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-selinux/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-selinux/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-selinux)|[![quality](https://img.shields.io/ansible/quality/57923)](https://galaxy.ansible.com/buluma/selinux)|[![downloads](https://img.shields.io/ansible/role/d/57923)](https://galaxy.ansible.com/buluma/selinux)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-selinux/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-selinux/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-selinux/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-selinux)|[![downloads](https://img.shields.io/ansible/role/d/4831)](https://galaxy.ansible.com/buluma/selinux)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-selinux.svg)](https://github.com/buluma/ansible-role-selinux/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
