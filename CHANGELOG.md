@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-selinux/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.9...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#23](https://github.com/buluma/ansible-role-selinux/issues/23)
+- Update action [\#22](https://github.com/buluma/ansible-role-selinux/issues/22)
+
 ## [1.0.9](https://github.com/buluma/ansible-role-selinux/tree/1.0.9) (2022-08-10)
 
 [Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.8...1.0.9)
