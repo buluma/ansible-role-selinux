@@ -1,26 +1,19 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-selinux/tree/HEAD)
+## [1.1.0](https://github.com/buluma/ansible-role-selinux/tree/1.1.0) (2024-01-04)
 
-[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/v1.0.10...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.9...1.1.0)
 
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#26](https://github.com/buluma/ansible-role-selinux/issues/26)
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#23](https://github.com/buluma/ansible-role-selinux/issues/23)
+- Update action [\#22](https://github.com/buluma/ansible-role-selinux/issues/22)
 
 **Merged pull requests:**
 
 - Bump actions/checkout from 3 to 4 [\#29](https://github.com/buluma/ansible-role-selinux/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#27](https://github.com/buluma/ansible-role-selinux/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
-
-## [v1.0.10](https://github.com/buluma/ansible-role-selinux/tree/v1.0.10) (2023-12-23)
-
-[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.9...v1.0.10)
-
-**Closed issues:**
-
-- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#23](https://github.com/buluma/ansible-role-selinux/issues/23)
-- Update action [\#22](https://github.com/buluma/ansible-role-selinux/issues/22)
 
 ## [1.0.9](https://github.com/buluma/ansible-role-selinux/tree/1.0.9) (2022-08-10)
 
