@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-selinux/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/dependabot-auto-merge-action from 2.0.2 to 2.1.1 [\#33](https://github.com/buluma/ansible-role-selinux/pull/33) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.1.0](https://github.com/buluma/ansible-role-selinux/tree/1.1.0) (2024-01-04)
 
 [Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.0.9...1.1.0)
