@@ -44,18 +44,18 @@ jobs:
   test:
     runs-on: ubuntu-20.04
     strategy:
-      fail-fast: false
+      fail-fast: no
       matrix:
         config:
           - image: "alpine-openrc"
             tag: "latest"
           - image: "amazonlinux"
             tag: "latest"
-          - image: "enterpriselinux"
+          - image: "centos"
             tag: "7"
-          - image: "enterpriselinux"
+          - image: "centos"
             tag: "8"
-          - image: "enterpriselinux"
+          - image: "centos"
             tag: "latest"
           - image: "debian-systemd"
             tag: "latest"
