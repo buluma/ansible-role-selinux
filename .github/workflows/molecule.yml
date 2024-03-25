@@ -50,9 +50,15 @@ jobs:
             tag: "latest"
           - image: "amazonlinux"
             tag: "latest"
+<<<<<<< HEAD
           - image: "centos"
+=======
+          - image: "enterpriselinux"
+            tag: "7"
+          - image: "enterpriselinux"
+>>>>>>> 406827534adff909f704022ad2d0235982183497
             tag: "8"
-          - image: "centos"
+          - image: "enterpriselinux"
             tag: "latest"
           - image: "debian-systemd"
             tag: "latest"
