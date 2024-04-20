@@ -11,4 +11,4 @@
         - name: http_can_network_connect
         - name: abrt_anon_write
           state: false
-          persistent: false
+          persistent: true
