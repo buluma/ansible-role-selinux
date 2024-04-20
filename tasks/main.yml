@@ -32,8 +32,9 @@
     - name: Manage selinux booleans
       ansible.posix.seboolean:
         name: "{{ item.name }}"
+        ignore_selinux_state: true
         state: "{{ item.state | default('yes') }}"
-        # persistent: "{{ item.persistent }}"
+        persistent: "{{ item.persistent }}"
       loop: "{{ selinux_booleans }}"
       loop_control:
         label: "{{ item.name }}"
