@@ -20,7 +20,7 @@
 - name: Configure selinux
   when:
     - ansible_selinux.status is defined
-    # - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
+    - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
   block:
     - name: Manage selinux
       ansible.posix.selinux:
@@ -33,7 +33,7 @@
       ansible.posix.seboolean:
         name: "{{ item.name }}"
         state: "{{ item.state | default('yes') }}"
-        persistent: "{{ item.persistent }}"
+        # persistent: "{{ item.persistent }}"
       loop: "{{ selinux_booleans }}"
       loop_control:
         label: "{{ item.name }}"
