@@ -15,7 +15,7 @@
     selinux_booleans:
       - name: httpd_can_network_connect
       - name: abrt_anon_write
-        state: permissive
+        state: true
         persistent: true
 
   roles:
