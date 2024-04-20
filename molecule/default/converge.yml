@@ -10,12 +10,12 @@
     bootstrap_wait_for_host: yes
 
     # selinux
-    selinux_state: enforcing
+    selinux_state: permissive
     selinux_reboot: true
     selinux_booleans:
       - name: httpd_can_network_connect
       - name: abrt_anon_write
-        state: true
+        state: permissive
         persistent: true
 
   roles:
