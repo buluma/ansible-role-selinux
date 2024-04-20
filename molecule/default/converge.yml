@@ -4,11 +4,26 @@
   become: true
   gather_facts: true
 
+  vars:
+    # bootstrap
+    bootstrap_user: root
+    bootstrap_wait_for_host: yes
+
+    # selinux
+    selinux_state: enforcing
+    selinux_reboot: true
+    selinux_booleans:
+      - name: httpd_can_network_connect
+      - name: abrt_anon_write
+        state: true
+        persistent: true
+
   roles:
     - role: ansible-role-selinux
-      selinux_reboot: false
-      selinux_booleans:
-        - name: http_can_network_connect
-        - name: abrt_anon_write
-          state: false
-          persistent: true
+      # selinux_state: enforcing
+      # selinux_reboot: false
+      # selinux_booleans:
+      #   - name: http_can_network_connect
+      #   - name: abrt_anon_write
+      #     state: true
+      #     persistent: true
