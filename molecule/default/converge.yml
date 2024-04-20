@@ -6,10 +6,9 @@
 
   roles:
     - role: ansible-role-selinux
-      selinux_state: permissive
       selinux_reboot: false
       selinux_booleans:
         - name: http_can_network_connect
         - name: abrt_anon_write
-          state: true
-          # persistent: false
+          state: false
+          persistent: false

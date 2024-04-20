@@ -20,19 +20,23 @@
 - name: Configure selinux
   when:
     - ansible_selinux.status is defined
-    - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
+    # - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
   block:
     - name: Manage selinux
       ansible.posix.selinux:
         state: "{{ selinux_state }}"
         policy: "{{ selinux_policy }}"
+      register: selinux_status
       notify:
         - Reboot
+
+    - name: Print the selinux status
+      ansible.builtin.debug:
+        msg: selinux_status
 
     - name: Manage selinux booleans
       ansible.posix.seboolean:
         name: "{{ item.name }}"
-        ignore_selinux_state: true
         state: "{{ item.state | default('yes') }}"
         persistent: "{{ item.persistent }}"
       loop: "{{ selinux_booleans }}"
