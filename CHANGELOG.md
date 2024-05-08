@@ -2,7 +2,16 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-selinux/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.3.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/24.3.31...HEAD)
+
+**Closed issues:**
+
+- Update action [\#25](https://github.com/buluma/ansible-role-selinux/issues/25)
+- rebuild action [\#24](https://github.com/buluma/ansible-role-selinux/issues/24)
+
+## [24.3.31](https://github.com/buluma/ansible-role-selinux/tree/24.3.31) (2024-03-30)
+
+[Full Changelog](https://github.com/buluma/ansible-role-selinux/compare/1.3.0...24.3.31)
 
 **Merged pull requests:**
 
