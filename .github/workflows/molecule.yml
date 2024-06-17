@@ -46,20 +46,18 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "alpine-openrc"
-            tag: "latest"
-          - image: "amazonlinux"
-            tag: "latest"
-          - image: "enterpriselinux"
+          - image: "docker-molecule-images"
+            tag: "alpine-openrc"
+          - image: "docker-molecule-images"
+            tag: "amazonlinux2023"
+          - image: "centos"
             tag: "8"
+          - image: "centos"
+            tag: "latest"
           - image: "docker-molecule-images"
             tag: "buster"
           - image: "docker-molecule-images"
             tag: "bullseye"
-          - image: "docker-molecule-images"
-            tag: "37"
-          - image: "docker-molecule-images"
-            tag: "38"
           - image: "docker-molecule-images"
             tag: "39"
           - image: "docker-molecule-images"
@@ -69,20 +67,22 @@ jobs:
           - image: "docker-molecule-images"
             tag: "opensuse"
           - image: "docker-molecule-images"
-            tag: "focal"
+            tag: "ubuntu_latest"
           - image: "docker-molecule-images"
-            tag: "bionic"
+            tag: "focal"
           - image: "docker-molecule-images"
             tag: "jammy"
           - image: "docker-molecule-images"
             tag: "lunar"
+          - image: "docker-molecule-images"
+            tag: "noble"
     steps:
       - name: Checkout Role
         uses: actions/checkout@v4
         with:
           path: "${{ github.repository }}"
       - name: Running Molecule Test
-        uses: buluma/molecule-action@v24.2.0
+        uses: buluma/molecule-action@v24.6.17
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
