@@ -38,6 +38,7 @@
       ansible.posix.seboolean:
         name: "{{ item.name }}"
         state: "{{ item.state | default('yes') }}"
+        persistent: "{{ item.persistent }}"
       loop: "{{ selinux_booleans }}"
       loop_control:
         label: "{{ item.name }}"
