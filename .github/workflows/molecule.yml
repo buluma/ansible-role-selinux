@@ -71,17 +71,8 @@ jobs:
           - image: "docker-molecule-images"
             tag: "jammy"
     steps:
-<<<<<<< dependabot/github_actions/buluma/molecule-action-24.6.17
-      - name: Checkout Role
-        uses: actions/checkout@v4
-        with:
-          path: "${{ github.repository }}"
-      - name: Running Molecule Test
-        uses: buluma/molecule-action@v24.6.17
-=======
       - name: checkout
         uses: actions/checkout@v6
->>>>>>> main
         with:
           path: ansible-role-selinux
 
