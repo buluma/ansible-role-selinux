@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 24.2.0 to 24.6.17 [\#44](https://github.com/buluma/ansible-role-selinux/pull/44) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Merge Testing [\#43](https://github.com/buluma/ansible-role-selinux/pull/43) ([buluma](https://github.com/buluma))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-selinux/tree/24.3.31) (2024-03-30)
