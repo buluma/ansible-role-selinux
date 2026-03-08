@@ -5,10 +5,10 @@
   gather_facts: true
 
   roles:
-  - role: buluma.selinux
-    selinux_reboot: false
-    selinux_booleans:
-    - name: http_can_network_connect
-    - name: abrt_anon_write
-      state: false
-      persistent: false
+    - role: buluma.selinux
+      selinux_reboot: false
+      selinux_booleans:
+        - name: http_can_network_connect
+        - name: abrt_anon_write
+          state: false
+          persistent: false
