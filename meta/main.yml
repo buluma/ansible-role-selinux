@@ -2,7 +2,7 @@
 galaxy_info:
   author: buluma
   role_name: selinux
-  description: Install and configure selinux and its required libraries on your 
+  description: Install and configure selinux and its required libraries on your
     system.
   license: Apache-2.0
   company: ShadowNet
