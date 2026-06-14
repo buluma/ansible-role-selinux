@@ -38,8 +38,8 @@ _selinux_requirements:
     - policycoreutils
 
 selinux_requirements:
-  "{{ _selinux_requirements[ansible_facts.distribution ~ '-' ~ ansible_facts.distribution_major_version] | default (_selinux_requirements[ansible_facts.os_family
-  ~ '-' ~ ansible_facts.distribution_major_version] | default(_selinux_requirements[ansible_facts.os_family] | default(_selinux_requirements['default']))) }}"
+  "{{ _selinux_requirements[ansible_facts['distribution'] ~ '-' ~ ansible_facts['distribution_major_version']] | default (_selinux_requirements[ansible_facts['os_family']
+  ~ '-' ~ ansible_facts['distribution_major_version']] | default(_selinux_requirements[ansible_facts['os_family']] | default(_selinux_requirements['default']))) }}"
 
 _selinux_policy:
   default: targeted
